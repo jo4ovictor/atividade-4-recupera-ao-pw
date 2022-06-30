@@ -1,14 +1,14 @@
 import "./Card.css";
 
-function Card( {id, nome, foto, tipo} ){
+function Card( {foto, nome} ){
     return(
-        <div className="pokemon">
+        <div className="site">
             <div className="rounded-foto">
                 <img className="foto-perfil" src={foto} alt={nome} />
             </div>
-            <div className="info-pokemon">
-                <p className="titulo">{id} {nome}</p>
-                <p>{tipo}</p>	
+
+            <div className="info-card">
+                <p>{nome}</p>	
             </div>
         </div>
     );
